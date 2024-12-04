@@ -75,7 +75,6 @@ class Interpreter:
                 else:
                     # If body is a single statement
                     result = self.eval(body)
-            print(f"Final result: {result}")
             return result
         elif node[0] == 'block':
             result = None

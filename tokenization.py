@@ -3,17 +3,17 @@ import re
 # Define the tokens
 token_specification = [
     ('NUMBER', r'\d+(\.\d*)?'),   # Integer or decimal number
-    ('STRING', r'"[^"]*"'),
+    ('STRING', r'"[^"]*"'),       # String
     ('ASSIGN', r'='),             # Assignment operator
     ('END', r';'),                # Statement terminator
     ('ID', r'[A-Za-z]+'),         # Identifiers
     ('OP', r'[+\-*/]'),           # Arithmetic operators
-    ('COND', r'[<>]=?|==|!='),
+    ('COND', r'[<>]=?|==|!='),    # Conditional statements
     ('LPAREN', r'\('),            # Left parenthesis
     ('RPAREN', r'\)'),            # Right parenthesis
     ('IF', r'if'),                # If keyword
     ('ELSE', r'else'),            # Else keyword
-    ('WHILE', r'while'),
+    ('WHILE', r'while'),          # While keyword
     ('SKIP', r'[ \t]+'),          # Skip whitespace
     ('MISMATCH', r'.'),           # Any other character
 ]
